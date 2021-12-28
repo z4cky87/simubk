@@ -44,7 +44,7 @@ class dataKelas extends CI_Controller {
          <strong>Data Berhasil Ditambahkan</strong>
          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
          </div>');
-         redirect('dataKelas');
+         redirect('admin/dataKelas');
        }
     }
 
