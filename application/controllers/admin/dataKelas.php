@@ -50,7 +50,7 @@ class dataKelas extends CI_Controller {
     public  function updateData($id)
     {
         $where = array('id_kelas'=>$id);
-        $data ['kelas'] = $this->db->query("SELECT * FROM data_kelas WHERE id_kelas=$id")->result();
+        $data ['kelas'] = $this->db->query("SELECT * FROM data_kelas WHERE id_kelas='$id'")->result();
         $data ['title'] = "Update Data Kelas" ;
        
         $this->load->view('templates_admin/header',$data);
@@ -78,7 +78,7 @@ class dataKelas extends CI_Controller {
           $where = array(
              'id_kelas' => $id
           );
-          $this->simubkModel->update_data($data,'data_kelas',$data,$where);
+          $this->simubkModel->update_data('data_kelas',$data,$where);
           $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
          <strong>Data Berhasil Diupdate</strong>
          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
