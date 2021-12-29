@@ -3,6 +3,7 @@
         <h1 class="h3 mb-0 text-gray-800"><?php echo $title ?></h1>
     </div>
     <a class="btn btn-success mb-3" href="<?php echo base_url('admin/dataKelas/tambahData') ?>"><i class="fas fa-plus"></i>Tambah Data</a>
+    <?php echo $this->session->flashdata('pesan') ?>
     <table class="table table-bordered table-striped">
         <tr>
             <th class="text-center">No</th>
