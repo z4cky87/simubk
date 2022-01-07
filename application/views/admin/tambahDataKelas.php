@@ -16,6 +16,11 @@
             <input type="text" name="uang_pangkal" class="form-control">
             <?php echo  form_error ('uang_pangkal','<div class="text-small text-danger"></div>') ?>
         </div>
+          <div class="form-group">
+            <label>Dana Sarpras</label>
+            <input type="text" name="dana_sarpras" class="form-control">
+            <?php echo  form_error ('dana_sarpras','<div class="text-small text-danger"></div>') ?>
+        </div>
         <div class="form-group">
             <label>Uang SPP</label>
             <input type="text" name="spp" class="form-control">

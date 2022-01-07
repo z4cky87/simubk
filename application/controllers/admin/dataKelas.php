@@ -33,10 +33,12 @@ class dataKelas extends CI_Controller {
        {
           $nama_kelas = $this->input->post('nama_kelas');
           $uang_pangkal = $this->input->post('uang_pangkal');
+          $dana_sarpras = $this->input->post('dana_sarpras');
           $spp = $this->input->post('spp');
           $data = array(
              'nama_kelas' => $nama_kelas,
              'uang_pangkal' => $uang_pangkal,
+             'dana_sarpras' => $dana_sarpras,
              'spp' => $spp
           );
           $this->simubkModel->insert_data($data,'data_kelas');

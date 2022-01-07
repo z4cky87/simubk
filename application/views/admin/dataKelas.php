@@ -9,6 +9,7 @@
             <th class="text-center">No</th>
             <th class="text-center">Nama Kelas</th>
             <th class="text-center">Uang Pangkal</th>
+            <th class="text-center">Dana Sarpras</th>
             <th class="text-center">SPP</th>
             <th class="text-center">Total</th>
             <th class="text-center">Action</th>
@@ -18,6 +19,7 @@
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $k->nama_kelas ?></td>
                 <td>Rp. <?php echo number_format($k->uang_pangkal,0,',','.') ?></td>
+                <td>Rp. <?php echo number_format($k->dana_sarpras,0,',','.') ?></td>
                 <td>Rp. <?php echo number_format($k->spp,0,',','.') ?></td>
                 <td>Rp. <?php echo number_format($k->uang_pangkal+$k->spp,0,',','.') ?></td>
             <td>
